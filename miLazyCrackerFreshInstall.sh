@@ -31,8 +31,8 @@ sudo apt-get install git libnfc-bin autoconf libnfc-dev
     git clean -dfx
     # patch initially done against commit 957702be:
     patch -p1 < ../crypto1_bs.diff
-    make get_craptev1
-    make get_crapto1
+    cp -r ../miLazyCrackerinstallfiles/craptev1-v1.1 ./
+    cp -r ../miLazyCrackerinstallfiles/crapto1-v3.3 ./
     make
     sudo cp -a libnfc_crypto1_crack /usr/local/bin
 )
